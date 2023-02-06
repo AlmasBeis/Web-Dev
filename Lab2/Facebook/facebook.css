@@ -1,0 +1,246 @@
+
+body{
+    margin: 0;
+}
+.main{
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    background-color: #F0F2F5;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    width: 1349px;
+    height:720px;
+}
+
+.logo_img{
+    width: 301px;
+    margin:-28px;
+}
+.logo-sign{
+    padding-top: 92px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    position: relative;
+}
+.logo-text{
+    width: 580px;
+    float: left;
+}
+.logo{
+    padding-bottom: 16px;
+    padding-top: 112px;
+    width: 548px;
+    height: 54px;
+}
+
+#under-logo-text{
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+    height: 64px;
+    color:#1c1e21;
+    padding-bottom: 20px;
+    margin: 0;
+}
+.sign{
+    display: inline-block;
+    vertical-align: top;
+    width: 396px;
+    height: 496px;
+    float: left;
+}
+#authorization{
+    background-color: white;
+    width: 396px;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin-top: 40px;
+    border: none;
+}
+input:focus {
+    outline:none
+
+}
+
+
+.input{
+    font-size: 17px;
+    width: 364px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: center;
+}
+.login-pass{
+    padding-top: 10px;
+}
+.input-block:focus{
+    border: 1px solid rgb(0, 100, 250);
+}
+.input-block{
+    font-size: 17px;
+    border-radius: 6px;
+    padding: 14px 16px;
+    width: 330px;
+    height: 22px;
+    border: 1px solid #dddfe2;
+    color: gray;
+}
+.inline{
+    display: inline-block;
+}
+.log-in{
+
+    padding-top: 10px;
+    width: 396px;
+    text-align: center;
+}
+.log-button{
+    width:364px;
+    font-size: 20px;
+    color:#fff;
+    background-color:#1877f2;
+    border-radius: 6px;
+    border:none;
+    font-weight: bold;
+    line-height: 48px;
+    cursor: pointer;
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.log-button:hover{
+    background-color: #1569da;
+}
+.forgot-link{
+    font-family: inherit;
+    margin-top: 16px;
+    cursor: pointer;
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 19px;
+}
+a{
+
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+}
+a:link:hover{
+    text-decoration: underline;
+}
+a:link{
+    text-decoration: none;
+}
+.line{
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    margin: 20px 16px 26px;
+}
+.create-acc{
+    text-align: center;
+}
+.create-button{
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #42b72a;
+    font-weight: bold;
+    color:white;
+    cursor: pointer;
+}
+.create-button:hover{
+    background-color: green;
+}
+.create-bus{
+    height: 18px;
+    margin-top: 29px;
+    color: #1c1e21;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+}
+.business{
+    font-weight: bold;
+    color:black;
+}
+.information-block{
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    width:initial;
+    height: 177px;
+}
+.language-bar{
+    color: #737373;
+    margin: 0 auto;
+    width: 980px;
+    padding-top: 28px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+li{
+    padding-right: 10px;
+}
+.lang{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.information-block a{
+    color:grey;
+    font-size: 12px;
+    font-family: inherit;
+    height: 18px;
+    line-height: 18px;
+}
+.lang-button{
+    border: 1px solid #c2c2c2;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 0 8px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #F0F2F5;
+
+}
+.plus{
+    color: grey;
+    width: 12px;
+    height: 12px;
+    font-size: 20px;
+    text-align: center;
+}
+.line2{
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    margin: 8px auto;
+    width: 980px;
+}
+.information-bar{
+    margin: 0 auto;
+    width: 980px;
+}
+.info{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info li{
+    padding-right: 20px;
+}
+
