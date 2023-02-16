@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+    function multiplyNumeric(obj) {
+      for (let key in obj) {
+        if (typeof obj[key] == 'number') {
+          obj[key] *= 2;
+          alert(obj[key]);
+        }
+      }
+    }
+    multiplyNumeric(obj={age:30})
+  </script>
+</head>
+<body>
+
+</body>
+</html>

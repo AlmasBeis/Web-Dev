@@ -15,8 +15,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -27,6 +28,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2L69paUkriux6GHjtgLHauvtMxY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,6 +53,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Учеба\4_sem\Web Dev\Lab3\javascript-info\2fund" />
+      <recent name="C:\Учеба\4_sem\Web Dev\Lab3\javascript-info\fund" />
+      <recent name="C:\Учеба\4_sem\Web Dev\Lab3" />
       <recent name="C:\Учеба\4_sem\Web Dev\Lab2\Facebook" />
     </key>
   </component>
@@ -68,7 +75,12 @@
       <workItem from="1675612784638" duration="9784000" />
       <workItem from="1675663047369" duration="29204000" />
       <workItem from="1675738597434" duration="4138000" />
-      <workItem from="1675765638018" duration="11756000" />
+      <workItem from="1675765638018" duration="12095000" />
+      <workItem from="1676020308944" duration="5078000" />
+      <workItem from="1676268647769" duration="2488000" />
+      <workItem from="1676304377807" duration="3943000" />
+      <workItem from="1676435480334" duration="12503000" />
+      <workItem from="1676550354638" duration="2681000" />
     </task>
     <servers />
   </component>
