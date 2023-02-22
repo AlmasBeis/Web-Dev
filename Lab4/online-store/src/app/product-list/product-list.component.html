@@ -1,0 +1,40 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+  <h3>
+    <a [title]="product.name + ' details'"
+    [routerLink]="['/products', product.id]"
+    >
+      {{ product.name }}
+    </a>
+  </h3>
+  <h5>{{ product.rating.toFixed(1) + ' / 5.0' }}</h5>
+
+  <div>
+    <img src="{{ product.photo }}" alt="photo" style="width:400px"/>
+    <p *ngIf="product.description">
+      Описание:<br>
+      <ng-container *ngFor="let line of product.description.split('\n')">
+        {{ line }}<br />
+      </ng-container>
+    </p>
+  </div>
+  <button type="button" (click)="share()" style="padding: 0">
+    <a
+      href="https://telegram.me/share/url?url={{ product.link }}"
+      target="_blank"
+      style="color: #fff; padding: 8px 16px"
+    >Share
+    </a>
+  </button>
+  <app-product-alerts
+    [product]="product"
+    (notify)="onNotify()">
+  </app-product-alerts>
+</div>
+
+<!--
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
