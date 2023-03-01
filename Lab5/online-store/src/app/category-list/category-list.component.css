@@ -1,0 +1,25 @@
+body{
+  background: white;
+}
+#categoryButton{
+  width:200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container{
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+}
+#name{
+  color: black;
+  font-weight: bold;
+}

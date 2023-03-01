@@ -29,7 +29,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2L69paUkriux6GHjtgLHauvtMxY" />
   <component name="ProjectLevelVcsManager">
@@ -45,7 +45,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/almas/Downloads/angular-mobzxy-ug5n9i(1)&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Учеба/src&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -58,6 +58,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Учеба\4_sem\Web Dev\Lab5" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Учеба\4_sem\Web Dev\Lab3\javascript-info\2fund" />
       <recent name="C:\Учеба\4_sem\Web Dev\Lab3\javascript-info\fund" />
@@ -115,11 +118,22 @@
       <workItem from="1676908964965" duration="782000" />
       <workItem from="1676911157343" duration="629000" />
       <workItem from="1676986303087" duration="5164000" />
-      <workItem from="1677038544865" duration="11710000" />
+      <workItem from="1677038544865" duration="12030000" />
+      <workItem from="1677120995725" duration="765000" />
+      <workItem from="1677168734183" duration="704000" />
+      <workItem from="1677264793637" duration="1804000" />
+      <workItem from="1677570739799" duration="639000" />
+      <workItem from="1677592443526" duration="11665000" />
+      <workItem from="1677650489094" duration="2225000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Lab5/online-store/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
   </component>
 </project>
