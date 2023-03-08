@@ -45,7 +45,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Учеба/src&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Учеба/4_sem/Web Dev/Lab 6&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -53,7 +53,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Учеба\\4_sem\\Web Dev\\Lab4\\online-store\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Учеба\\4_sem\\Web Dev\\Lab 6\\angular-custom-route-match\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -124,7 +124,15 @@
       <workItem from="1677264793637" duration="1804000" />
       <workItem from="1677570739799" duration="639000" />
       <workItem from="1677592443526" duration="11665000" />
-      <workItem from="1677650489094" duration="2225000" />
+      <workItem from="1677650489094" duration="2494000" />
+      <workItem from="1677835357568" duration="4244000" />
+      <workItem from="1677945713026" duration="3959000" />
+      <workItem from="1678121797336" duration="4030000" />
+      <workItem from="1678203872640" duration="6536000" />
+      <workItem from="1678211289342" duration="247000" />
+      <workItem from="1678277136588" duration="1350000" />
+      <workItem from="1678278535996" duration="2625000" />
+      <workItem from="1678281788258" duration="10000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,30 @@
+<h2>Albums list</h2>
+<h2>Create album</h2>
+<form (submit)="onSubmit()">
+
+  <label>
+    User ID:
+    <input type="number" [(ngModel)]="newAlbum.userId" name="userId">
+  </label>
+
+  <label>
+    Title:
+    <input type="text" [(ngModel)]="newAlbum.title" name="title">
+  </label>
+
+  <button type="submit">Create Album</button>
+</form>
+
+<ul *ngIf="loaded">
+  <li *ngFor="let album of albums">
+    <a routerLink="/albums/{{album.id}}">
+      {{album.id}}) {{album.title}}
+    </a>
+    <button (click)="deleteAlbum(album.id)">Delete</button>
+  </li>
+</ul>
+
+
+
+<h3 *ngIf="!loaded">Albums are loading...</h3>
+

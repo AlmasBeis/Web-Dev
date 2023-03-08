@@ -1,0 +1,15 @@
+button{
+  margin-left: 10px;
+}
+li{
+  margin: 5px;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  color: #252525;
+}
+a:visited{
+  color: #964eb2;
+}
