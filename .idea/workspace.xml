@@ -45,7 +45,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Учеба/4_sem/Web Dev/Lab 6&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Учеба/4_sem/Web Dev&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -133,6 +133,9 @@
       <workItem from="1678277136588" duration="1350000" />
       <workItem from="1678278535996" duration="2625000" />
       <workItem from="1678281788258" duration="10000" />
+      <workItem from="1678891575458" duration="941000" />
+      <workItem from="1678892743606" duration="806000" />
+      <workItem from="1678893567730" duration="319000" />
     </task>
     <servers />
   </component>
@@ -142,6 +145,17 @@
       <list>
         <option value="$PROJECT_DIR$/Lab5/online-store/node_modules/karma/config.tpl.js" />
       </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
 </project>
