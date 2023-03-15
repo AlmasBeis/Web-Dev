@@ -53,7 +53,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Учеба\\4_sem\\Web Dev\\Lab 6\\album\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Учеба\\4_sem\\Web Dev\\Lab 6\\angular-custom-route-match\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -133,9 +133,9 @@
       <workItem from="1678277136588" duration="1350000" />
       <workItem from="1678278535996" duration="2625000" />
       <workItem from="1678281788258" duration="10000" />
-      <workItem from="1678286245806" duration="309000" />
-      <workItem from="1678440237853" duration="1646000" />
-      <workItem from="1678893401322" duration="1256000" />
+      <workItem from="1678891575458" duration="941000" />
+      <workItem from="1678892743606" duration="806000" />
+      <workItem from="1678893567730" duration="319000" />
     </task>
     <servers />
   </component>
