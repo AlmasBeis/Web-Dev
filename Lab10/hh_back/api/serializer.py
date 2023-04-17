@@ -1,3 +1,5 @@
+from abc import ABC
+
 from rest_framework import serializers
 from .models import Company, Vacancy
 
@@ -7,14 +9,15 @@ class CompanySerializer(serializers.ModelSerializer):
         model = Company
         fields = '__all__'
 
-    # def create(self, validated_data):
-    #     category = Company.objects.create(name=validated_data['name'])
-    #     return category
-    #
-    # def update(self, instance, validated_data):
-    #     instance.name = validated_data['name']
-    #     instance.save()
-    #     return instance
+
+class CompanyCreateSerializer(serializers.Serializer):
+    name = serializers.CharField(max_length=200)
+    description = serializers.CharField(max_length=200, required=False, allow_blank=True, default="")
+    city = serializers.CharField(max_length=200)
+    address = serializers.CharField(max_length=200, required=False, allow_blank=True, default="")
+
+    def create(self, validated_data):
+        return Company.objects.create(**validated_data)
 
 
 class VacancySerializer(serializers.ModelSerializer):

@@ -8,12 +8,14 @@ import { HomeComponent } from './home/home.component';
 import {NgFor, NgIf} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { VacancyComponent } from './vacancy/vacancy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CompanyComponent,
-    HomeComponent
+    HomeComponent,
+    VacancyComponent
   ],
   imports: [
     HttpClientModule,

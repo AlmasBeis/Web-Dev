@@ -4,6 +4,11 @@
 
 <ul>
   <li *ngFor="let c of companies">
-    <p>id: {{c.id}}, name: {{c.name}}</p>
+    <p>id: {{c.id}}, <a routerLink="/companies/{{c.id}}">name: {{c.name}}</a></p>
+    <p>
+      {{c.description}}
+    </p>
+    <p>
+      City: {{c.city}}, address: {{c.address}}
   </li>
 </ul>
