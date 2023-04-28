@@ -1,0 +1,13 @@
+<h1>Welcome to Red Lantern Kitchen!</h1>
+
+<div>
+  <div class="form">
+    <label>Username</label>
+    <input type="username" [(ngModel)]="username">
+  </div>
+  <div class="form">
+    <label>Password</label>
+    <input type="password" [(ngModel)]="password">
+  </div>
+  <button (click)="onSubmit()" class="submitButton">Login</button>
+</div>
