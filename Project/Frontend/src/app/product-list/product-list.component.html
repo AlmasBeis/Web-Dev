@@ -1,0 +1,9 @@
+<p>product-list works!</p>
+
+
+<div class="product-cards">
+  <div *ngFor="let product of products">
+    <p>id: {{product.id}},name: {{product.name}}</p>
+  </div>
+</div>
+<button (click)="logout()">Log out</button>

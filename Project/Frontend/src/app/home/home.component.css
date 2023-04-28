@@ -1,0 +1,14 @@
+.background{
+  background-color: lightgray;
+  height: 25%;
+}
+.singUpCard{
+  background-color: white;
+  height: 75%;
+  width: 100% ;
+  display: flex;
+}
+app-login{
+  font-family: Arial;
+  margin: 1% auto auto;
+}
