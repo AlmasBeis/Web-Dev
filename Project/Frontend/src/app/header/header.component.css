@@ -74,3 +74,16 @@
   color: #fff;
   background: #00235B;
 }
+.btn {
+  margin-top: 10px;
+  padding: 5px 5px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  background: #E64848;
+  border-radius: .5rem;
+}
+
+.btn:hover {
+  background: #130f40;
+}

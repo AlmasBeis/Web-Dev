@@ -1,1 +1,23 @@
-<p>registration works!</p>
+<h1>Welcome to Red Lantern Kitchen!</h1>
+
+<div class="input-box">
+  <div class="form">
+    <label>Username</label>
+    <input type="username" [(ngModel)]="username">
+  </div>
+  <div class="form">
+    <label>Email</label>
+    <input type="email" [(ngModel)]="email">
+  </div>
+  <div class="form">
+    <label>Password</label>
+    <input type="password" [(ngModel)]="password">
+  </div>
+  <div class="form">
+    <label>Confirm Password</label>
+    <input type="password" [(ngModel)]="passwordCopy">
+  </div>
+  <button (click)="onSubmit()" class="submitButton">Sign Up</button>
+</div>
+<div class="addLoginFunc">Already have an account? <button class="fakeA" routerLink="/signin">Log in</button></div>
+

@@ -15,7 +15,9 @@ import { ProductCardComponent } from './product-card/product-card.component';
 import { CategoryListComponent } from './category-list/category-list.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
-import { AboutComponent } from './about/about.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
+import { UserSettingsComponent } from './user-settings/user-settings.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { AboutComponent } from './about/about.component';
     CategoryListComponent,
     LoginComponent,
     RegistrationComponent,
-    AboutComponent
+    UserDetailComponent,
+    UserSettingsComponent,
+    CartComponent
   ],
   imports: [
     HttpClientModule,

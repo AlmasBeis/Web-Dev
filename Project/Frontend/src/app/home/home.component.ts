@@ -7,14 +7,26 @@ import {UserService} from "../user.service";
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent {
 
-  constructor(private router: Router, private userServise: UserService) {
+  constructor(private router: Router,) {
   }
-  logged = this.userServise.logged
-  ngOnInit(): void{
-    if(localStorage.getItem('token')){
-      this.router.navigateByUrl("/products")
-    }
+  private WelcomeMode: string | undefined;
+  // ngOnInit(): void{
+  //   if(localStorage.getItem('token')){
+  //     this.router.navigateByUrl("/products")
+  //   }
+  //   this.toLogin()
+  //   this.WelcomeMode = "Login"
+  // }
+  toLogin(): void{
+    this.WelcomeMode="Login"
+  }
+  toNewAcc(): void{
+    this.WelcomeMode="NewAcc"
+  }
+
+  getMode(){
+    return this.WelcomeMode
   }
 }

@@ -1,33 +1,33 @@
-<app-header class="header"></app-header>
 
 
-<!--<div class="product-cards">-->
-<!--  <div *ngFor="let product of products">-->
-<!--    <p>id: {{product.id}},name: {{product.name}}</p>-->
-<!--  </div>-->
-<!--</div>-->
-
+<div class="heading">
+  <span>our menu</span>
+  <h3>our top dishes</h3>
+</div>
 <div class="s">
-<div class="box-container" *ngFor="let product of products">
 
-  <div class="box">
-    <a href="#" class="fas fa-heart"></a>
-    <div class="image">
-      <img src="{{product.image}}"alt="">
-    </div>
-    <div class="content">
-      <h3>delicious food</h3>
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half-alt"></i>
-        <span> (50) </span>
+
+
+  <div class="box-container" *ngFor="let product of products">
+
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <div class="image">
+        <img src="{{product.image}}"alt="">
       </div>
-      <div class="price">$40.00 <span>$50.00</span></div>
-      <a href="#" class="btn">add to cart</a>
+      <div class="content">
+        <h3>delicious food</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span> (50) </span>
+        </div>
+        <div class="price">${{product.price}} </div>
+        <button class="btn" (click)="addToCart(product.id, $event)">add to cart</button>
+      </div>
     </div>
   </div>
-</div>
 </div>

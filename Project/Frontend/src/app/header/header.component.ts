@@ -9,8 +9,5 @@ import {UserService} from "../user.service";
 export class HeaderComponent {
   constructor(private userService:UserService) {
   }
-  logout(){
-    this.userService.logout()
 
-  }
 }

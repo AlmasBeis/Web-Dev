@@ -1,10 +1,8 @@
 from abc import ABC
 
 from rest_framework import serializers
-<<<<<<< HEAD
 
-=======
->>>>>>> ea18350e6d55ed8b2c871f567a6ad7e7c39d7eb2
+import user
 from .models import Product, Category, Cart, Review
 
 
@@ -34,7 +32,7 @@ class ProductSerializer(serializers.ModelSerializer):
 
 class CartSerializer(serializers.ModelSerializer):
     product_id = serializers.IntegerField(write_only=True)
-    product = ProductSerializer()
+    product = ProductSerializer(read_only=True)
 
     class Meta:
         model = Cart
@@ -42,8 +40,8 @@ class CartSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         product_id = validated_data.pop('product_id')
-        product = Category.objects.get(id=product_id)
-        cart = Product.objects.create(product=product, **validated_data)
+        product = Product.objects.get(id=product_id)
+        cart = Cart.objects.create(product=product, **validated_data)
         return cart
 
 

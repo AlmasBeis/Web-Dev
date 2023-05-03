@@ -1,9 +1,11 @@
-from django.contrib.auth import get_user_model
+
+from django.contrib.auth.models import User
 from django.db import models
 
 from django.utils import timezone
 
-User = get_user_model()
+from user.models import CustomUser
+
 
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True)
@@ -23,14 +25,14 @@ class Product(models.Model):
 
 
 class Cart(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=1)
     created_at = models.DateTimeField(default=timezone.now, editable=False)
 
 
 class Review(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     rating = models.IntegerField(0)
     comment = models.TextField(default="...")

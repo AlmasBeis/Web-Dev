@@ -1,6 +1,6 @@
 <h1>Welcome to Red Lantern Kitchen!</h1>
 
-<div>
+<div class="input-box">
   <div class="form">
     <label>Username</label>
     <input type="username" [(ngModel)]="username">
@@ -11,3 +11,4 @@
   </div>
   <button (click)="onSubmit()" class="submitButton">Login</button>
 </div>
+<div class="addLoginFunc">Don't have an account? <button class="fakeA" routerLink="/signup">Sign Up</button></div>
