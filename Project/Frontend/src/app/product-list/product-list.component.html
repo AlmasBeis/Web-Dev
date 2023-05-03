@@ -30,4 +30,31 @@
       </div>
     </div>
   </div>
+  <div class="btn" *ngIf="is_super" (click)="addProductForm = true">Add Product</div>
+
+</div>
+<div *ngIf="is_super && addProductForm">
+  <div class="input-box">
+    <div class="form">
+      <label>Category</label>
+      <input type="c_id" [(ngModel)]="category_id">
+    </div>
+    <div class="form">
+      <label>Name</label>
+      <input type="name" [(ngModel)]="name">
+    </div>
+    <div class="form">
+      <label>Price</label>
+      <input type="c_id" [(ngModel)]="price">
+    </div>
+    <div class="form">
+      <label>Description</label>
+      <input type="name" [(ngModel)]="description">
+    </div>
+    <div class="form">
+      <label>Image</label>
+      <input type="name" [(ngModel)]="image">
+    </div>
+    <button (click)="onSubmit()" class="submitButton">Add</button>
+  </div>
 </div>
