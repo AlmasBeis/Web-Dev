@@ -17,6 +17,7 @@ export class ProductService {
   getProducts(): Observable<Product[]>{
     return this.httpClient.get<Product[]>(this.apiUrl)
   }
+
   createProduct(category_id: number, name:string, price: number, description: string, image: string): Observable<Product>{
     return this.httpClient.post<Product>(this.apiUrl,{category_id, name, price, description, image})
   }

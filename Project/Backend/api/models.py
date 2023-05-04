@@ -13,6 +13,9 @@ class Category(models.Model):
     description = models.TextField(default="...")
     created_at = models.DateTimeField(default=timezone.now, editable=False)
 
+    def __str__(self):
+        return self.name
+
 
 # Create your models here.
 class Product(models.Model):
@@ -22,13 +25,15 @@ class Product(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     image = models.TextField(default="https://m.media-amazon.com/images/I/517gfFg6I6L._AC_.jpg")
     created_at = models.DateTimeField(default=timezone.now, editable=False)
-
+    def __str__(self):
+        return self.name
 
 class Cart(models.Model):
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=1)
     created_at = models.DateTimeField(default=timezone.now, editable=False)
+
 
 
 class Review(models.Model):
