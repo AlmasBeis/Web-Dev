@@ -3,7 +3,8 @@ from rest_framework_jwt.views import obtain_jwt_token
 
 from user.views import UserCreateView, UserUpdateView, UserRetrieveView
 from . import views
-from .views import ProductList, ProductByID, CategoryList, CategoryByID, UserId, CartList, CartById
+from .views import ProductList, ProductByID, CategoryList, CategoryByID, UserId, CartList, CartById, \
+    ProductListByCategory
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -18,4 +19,5 @@ urlpatterns = [
     path('categories/',CategoryList.as_view()),
     path('products/<int:pk>/', ProductByID.as_view()),
     path('categories/<int:pk>/', CategoryByID.as_view()),
+    path('categories/<int:pk>/products/', ProductListByCategory.as_view()),
 ]

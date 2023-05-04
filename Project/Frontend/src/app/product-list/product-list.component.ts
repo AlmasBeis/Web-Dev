@@ -5,7 +5,9 @@ import {UserService} from "../user.service";
 import {CartService} from "../cart.service";
 import {CartItem} from "../interfaces/cart-item";
 import {User} from "../interfaces/user";
-import {Observable} from "rxjs";
+import {empty, Observable} from "rxjs";
+import {ActivatedRoute, Router} from "@angular/router";
+import {CategoryService} from "../category.service";
 
 @Component({
   selector: 'app-product-list',
@@ -26,10 +28,11 @@ export class ProductListComponent implements OnInit{
 
 
 
-  constructor(private productService: ProductService, private userService: UserService, private cartService: CartService) {
+  constructor(private productService: ProductService, private userService: UserService,
+              private cartService: CartService, private router: Router, private route: ActivatedRoute,private categoryService:CategoryService) {
   }
-  logged = this.userService.logged
 
+  logged = this.userService.getLog();
   is_super: Boolean = false;
 
   user: Observable<User> = this.userService.getUser();
@@ -37,9 +40,18 @@ export class ProductListComponent implements OnInit{
   addProductForm: Boolean = false;
 
   ngOnInit(): void {
-    this.productService.getProducts().subscribe(product => {
-      this.products = product
+    const routeParams = this.route.snapshot.paramMap;
+    const categoryIdFromRoute = Number(routeParams.get('categoryID'));
+    this.categoryService.getProducts(categoryIdFromRoute).subscribe((data) => {
+      this.products = data;
     })
+
+    if (!categoryIdFromRoute){
+      this.productService.getProducts().subscribe(product => {
+        this.products = product
+      })
+    }
+
     this.cartService.getCart().subscribe(cart => {
           this.cart=cart;
         }
@@ -47,28 +59,23 @@ export class ProductListComponent implements OnInit{
     this.user.subscribe(data=>{
       this.is_super = data.is_superuser
     })
-  }
-  // addToCart(){
-  //   this.cartService.createCart(this.product)
-  // }
 
-  addToCart(id: number, event: Event) {
+  }
+
+
+
+    addToCart(id: number, quantity: number, event: Event) {
     if (this.logged){
-      this.cartService.addToCart(id,this.cart).subscribe(product=>{})
+      this.cartService.addToCart(id, this.cart, quantity).subscribe(product=>{})
       event.stopPropagation();
       alert("go to cart")
     }else{
       alert("Log in first ")
     }
-
-
-
-
   }
-  // addProduct(category_id: number, name:string, price: number, description: string, image: string){
-  //   this.productService.createProduct(category_id,name,price,description,image).subscribe(data=>{})
-  // }
-
+  toDetails(product: Product){
+    this.router.navigateByUrl('/products/'+ product.id);
+  }
   onSubmit() {
     this.productService.createProduct(this.category_id, this.name, this.price, this.description, this.image).subscribe(
         data=> {alert("product created"); window.location.reload();

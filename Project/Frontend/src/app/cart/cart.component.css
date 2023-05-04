@@ -58,16 +58,16 @@ h4{
     padding: 10px;
     font-size: 25px;
 }
-.blue-button{
+.red-button{
     border: none;
     border-radius: 4px;
-    background-color: #53a6ff;
+    background-color: #ff5353;
     color: white;
     text-align: center;
     transition: background-color 0.2s ease-in-out;
 }
-.blue-button:hover{
-    background-color: #398de7;
+.red-button:hover{
+    background-color: #e73939;
 }
 .login{
     margin: 5% auto;

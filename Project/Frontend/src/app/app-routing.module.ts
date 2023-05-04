@@ -8,12 +8,16 @@ import {UserSettingsComponent} from "./user-settings/user-settings.component";
 import {LoginComponent} from "./login/login.component";
 import {RegistrationComponent} from "./registration/registration.component";
 import {CartComponent} from "./cart/cart.component";
+import {ProductDetailComponent} from "./product-detail/product-detail.component";
+import {CategoryListComponent} from "./category-list/category-list.component";
 
 const routes: Routes = [
   {path: '', redirectTo: "/home", pathMatch: "full"},
   {path: 'home', component: HomeComponent},
   {path: 'products', component: ProductListComponent},
-  {path: 'category', component: ProductListComponent},
+  {path: 'products/:productID', component: ProductDetailComponent},
+  {path: 'category', component: CategoryListComponent},
+  {path: 'category/:categoryID', component: ProductListComponent},
   {path: "profile", component: UserDetailComponent},
   {path: "profile/settings", component: UserSettingsComponent},
   {path: 'signin', component: LoginComponent},

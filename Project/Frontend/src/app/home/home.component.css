@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
+h
 .background{
   background-color: lightgray;
   height: 25%;
@@ -19,7 +20,7 @@ app-registration{
   font-family: Arial;
   margin: 1% auto auto;
 }
-* {
+*{
    font-family: 'Poppins', sans-serif;
    margin: 0;
    padding: 0;
@@ -45,6 +46,7 @@ app-registration{
   gap: 2rem;
   position: relative;
   overflow: hidden;
+  background: #efefef;
 }
 
 .home .content {
@@ -83,7 +85,12 @@ app-registration{
   width: 100%;
   margin-top: 5rem;
 }
+.underline{
+  margin: 15px auto;
 
+  width: 90%;
+  border: 2px solid #e55c5c;
+}
 .home .home-parallax-img {
   position: absolute;
   top: -10rem;

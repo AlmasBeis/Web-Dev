@@ -1,5 +1,5 @@
-
-<div class="page-borders">
+<div class="login blue-button buy-button" *ngIf="!this.logged" routerLink="/signin">Log in to see cart</div>
+<div class="page-borders" *ngIf="this.logged">
   <div class="profile-card">
     <div>Username:</div>
     <div>email:</div>

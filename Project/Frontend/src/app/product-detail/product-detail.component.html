@@ -1,1 +1,33 @@
-<p>product-detail works!</p>
+<div class="page-borders">
+    <div class="main-card">
+        <div class="for-image">
+            <img src="{{product.image}}"
+                 width="500px">
+        </div>
+        <div class="for-main-info">
+            <h1>{{product.name}}</h1>
+            <div class="underline"></div>
+            <h3>cost:</h3>
+            <h2>{{product.price}} KZT</h2>
+            <h3>Description:</h3>
+            <p>{{product.description}}</p>
+            <div>
+                <div class="quantity">
+                    <button class="increase-btn" (click)="decrementQuantity()">-</button>
+                    <input class="quantity-input" type="number" [value]="quantity" readonly>
+                    <button class="increase-btn" (click)="incrementQuantity()">+</button>
+                </div>
+                <button class="red-button" (click)="addToCart(product.id, quantity, $event)">Add to cart</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="feature-card">
+        <h2>About</h2>
+        <h3>Category:</h3>
+        <p>{{product.category.name}}</p>
+        <div class="underline"></div>
+
+    </div>
+
+</div>

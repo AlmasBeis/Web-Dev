@@ -5,6 +5,7 @@ import {Observable} from "rxjs";
 import {Cart} from "./interfaces/cart";
 import {CartItem} from "./interfaces/cart-item";
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -20,26 +21,26 @@ export class CartService {
     return this.httpClient.get<CartItem[]>(this.apiUrl)
   }
 
-  createCart(product_id: number): Observable<CartItem>{
-    return this.httpClient.post<CartItem>(this.apiUrl, {product_id})
+  createCart(product_id: number, quantity: number): Observable<CartItem>{
+    return this.httpClient.post<CartItem>(this.apiUrl, {product_id, quantity})
   }
-  addToCart(product_id: number, cartItems: CartItem[]) {
+  addToCart(product_id: number, cartItems: CartItem[], quant: number) {
     // check if product already exists in cart
     const existingCartItem = cartItems.find(item => item.product.id === product_id);
 
     let quantity;
     if (existingCartItem) {
-      // if product already exists, increment quantity
-      existingCartItem.quantity += 1;
+      if  (quant>1){
+        existingCartItem.quantity +=quant;
+      }else{
+        existingCartItem.quantity += 1;
+      }
       quantity = existingCartItem.quantity
       return this.httpClient.put<CartItem>(`${this.apiUrl}${existingCartItem.id}/`, {product_id, quantity});
     } else {
       // if product does not exist, create new cart item
-      const newCartItem = {
-        product_id: product_id,
-        quantity: 1
-      };
-      return this.createCart(product_id)
+
+      return this.createCart(product_id, quant)
     }
   }
 

@@ -30,6 +30,19 @@ class ProductByID(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = (AllowAny,)
 
 
+class ProductListByCategory(generics.ListAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+    permission_classes = (AllowAny,)
+
+    def get_queryset(self):
+        category_id = self.kwargs['pk']
+        return Product.objects.filter(category_id=category_id)
+
+    def get(self, request, *args, **kwargs):
+        return self.list(request, *args, **kwargs)
+
+
 class CategoryList(generics.ListCreateAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer

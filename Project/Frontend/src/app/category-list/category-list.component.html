@@ -1,1 +1,16 @@
-<p>category-list works!</p>
+<div class="heading">
+    <span>category of products</span>
+</div>
+<div class="category">
+<div class="box-container" *ngFor="let category of categorys">
+
+    <div class="box" (click)="categoryProducts(category.id)">
+        <div class="image">
+            <img src="{{category.image}}" alt="">
+        </div>
+        <div class="content">
+            <h3>{{category.name}}</h3>
+
+        </div>
+    </div>
+</div>

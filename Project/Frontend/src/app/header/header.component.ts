@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {UserService} from "../user.service";
 
 @Component({
@@ -6,8 +6,12 @@ import {UserService} from "../user.service";
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
+export class HeaderComponent{
+  logged: boolean = false;
   constructor(private userService:UserService) {
+    this.logged = this.userService.getLog()
   }
+
+
 
 }

@@ -1,0 +1,50 @@
+.category{
+    margin-left: 20%;
+}
+
+.box{
+    margin: auto;
+    border-radius: .5rem;
+    background: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+.box-container{
+    display: inline-flex;
+    margin: auto;
+}
+.box:hover {
+    background: #f5a4a4;
+}
+
+.box:hover .content h3 {
+    color: #fff;
+}
+
+.box img {
+    height: 100px
+}
+
+.box .content h3 {
+    font-size: 20px;
+    color: #130f40;
+    padding-bottom: .5rem;
+}
+
+.box .content .price {
+    font-size: 18px;
+    color: #000000;
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.heading span {
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    color: #E64848;
+}

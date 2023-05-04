@@ -9,7 +9,7 @@
     <a href="products">Menu</a>
     <a href="cart">Order card</a>
     <a href="profile">Profile</a>
-    <a href="signin">Sign in</a>
+    <a *ngIf="!logged" href="signin">Sign in</a>
 <!--    <a href="signup">Sign up</a>-->
 
   </nav>

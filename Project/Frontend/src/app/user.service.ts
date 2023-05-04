@@ -13,22 +13,27 @@ export class UserService implements OnInit{
   private user: Authtoken = <Authtoken>{};
   logged: boolean = false;
   ngOnInit(){
+    this.getLog()
+  }
+  getLog(){
     const token = localStorage.getItem("token")
     if(token){
       this.logged = true
     }
+    return this.logged
   }
+
 
   constructor(private http: HttpClient, private apiService: ApiLinkService) {
   }
   login(email: string, password: string): Observable<Authtoken>{
     return this.http.post<Authtoken>(`${this.apiService.getBaseUrl()}/api/login/`, {email, password})
-
   }
 
   logout(){
     localStorage.removeItem('token');
     this.logged = false;
+    window.location.reload()
   }
   getUserId(): Observable<User>{
     return this.http.get<User>(`${this.apiService.getBaseUrl()}/api/userid/`)
@@ -43,4 +48,5 @@ export class UserService implements OnInit{
   updateUser(id: number, username: string, email: string, password: string, password2: string): Observable<User>{
     return this.http.put<User>(`${this.apiService.getBaseUrl()}/api/password/${id}/`, { username, email, password, password2 })
   }
+
 }

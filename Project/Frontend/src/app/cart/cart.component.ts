@@ -13,7 +13,7 @@ export class CartComponent implements OnInit{
   total: number = 0;
   constructor(private cartService: CartService, private userService: UserService) {}
 
-  logged = this.userService.logged
+  logged = this.userService.getLog()
 
   ngOnInit() {
     this.cartService.getCart().subscribe(cart => {
@@ -34,7 +34,7 @@ export class CartComponent implements OnInit{
   }
   totalPrice(){
     for (let card of this.cart) {
-      this.total = Number(card.product.price) + this.total
+      this.total = Number(card.product.price)*card.quantity + this.total
     }
   }
 

@@ -7,15 +7,15 @@
 
   <div class="box-container" *ngFor="let product of products">
 
-    <div class="box">
+    <div class="box" >
       <a href="#" class="fas fa-heart"></a>
       <div class="image">
-        <img src="{{product.image}}"alt="">
+        <img src="{{product.image}}" alt="" (click)="toDetails(product)">
       </div>
       <div class="content">
         <h3>{{product.name}}</h3>
         <div class="price">${{product.price}} </div>
-        <button class="btn" (click)="addToCart(product.id, $event)">add to cart</button>
+        <button class="btn" (click)="addToCart(product.id,1, $event)">add to cart</button>
       </div>
     </div>
   </div>

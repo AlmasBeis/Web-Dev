@@ -21,6 +21,7 @@ export class LoginComponent{
         this.username='';
         this.password='';
         this.router.navigateByUrl('/products');
+        this.userService.getLog()
       },
       error => {
         console.error(error);

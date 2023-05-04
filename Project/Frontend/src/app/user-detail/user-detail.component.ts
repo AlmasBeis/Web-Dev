@@ -11,6 +11,7 @@ export class UserDetailComponent {
 
   constructor(private router: Router, private userService: UserService) {
   }
+  logged = this.userService.getLog()
   logOut(){
     this.userService.logout()
     this.router.navigateByUrl("")
