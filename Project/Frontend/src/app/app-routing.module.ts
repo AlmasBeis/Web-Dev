@@ -1,7 +1,6 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
 
-import {Routes,RouterModule} from "@angular/router";
+import {RouterModule, Routes} from "@angular/router";
 import {HomeComponent} from "./home/home.component";
 import {ProductListComponent} from "./product-list/product-list.component";
 import {UserDetailComponent} from "./user-detail/user-detail.component";

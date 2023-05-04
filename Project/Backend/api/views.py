@@ -33,11 +33,13 @@ class ProductByID(generics.RetrieveUpdateDestroyAPIView):
 class CategoryList(generics.ListCreateAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
+    permission_classes = (AllowAny,)
 
 
 class CategoryByID(generics.RetrieveUpdateDestroyAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
+    permission_classes = (AllowAny,)
 
 
 class CartList(generics.ListCreateAPIView):

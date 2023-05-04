@@ -69,3 +69,6 @@ h4{
 .blue-button:hover{
     background-color: #398de7;
 }
+.login{
+    margin: 5% auto;
+}

@@ -53,10 +53,17 @@ export class ProductListComponent implements OnInit{
   // }
 
   addToCart(id: number, event: Event) {
-    this.cartService.addToCart(id,this.cart).subscribe(product=>{})
-    event.stopPropagation();
+    if (this.logged){
+      this.cartService.addToCart(id,this.cart).subscribe(product=>{})
+      event.stopPropagation();
+      alert("go to cart")
+    }else{
+      alert("Log in first ")
+    }
 
-    alert("go to cart")
+
+
+
   }
   // addProduct(category_id: number, name:string, price: number, description: string, image: string){
   //   this.productService.createProduct(category_id,name,price,description,image).subscribe(data=>{})

@@ -1,10 +1,9 @@
 import {Injectable, OnInit} from '@angular/core';
 
-import {HttpClient, HttpHeaders} from "@angular/common/http";
-import {catchError, Observable, tap, throwError} from "rxjs";
+import {HttpClient} from "@angular/common/http";
+import {Observable} from "rxjs";
 import {Authtoken} from "./interfaces/authtoken";
 import {ApiLinkService} from "./api-link.service";
-import {Product} from "./interfaces/product";
 import {User} from "./interfaces/user";
 
 @Injectable({

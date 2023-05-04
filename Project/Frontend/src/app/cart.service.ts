@@ -1,11 +1,9 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {ApiLinkService} from "./api-link.service";
 import {Observable} from "rxjs";
 import {Cart} from "./interfaces/cart";
-import {CreateCart} from "./interfaces/create-cart";
 import {CartItem} from "./interfaces/cart-item";
-import {Product} from "./interfaces/product";
 
 @Injectable({
   providedIn: 'root'

@@ -1,8 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {CartService} from "../cart.service";
-import {Cart} from "../interfaces/cart";
 import {CartItem} from "../interfaces/cart-item";
-import {toNumbers} from "@angular/compiler-cli/src/version_helpers";
+import {UserService} from "../user.service";
 
 @Component({
   selector: 'app-cart',
@@ -12,7 +11,9 @@ import {toNumbers} from "@angular/compiler-cli/src/version_helpers";
 export class CartComponent implements OnInit{
   cart : CartItem[] = [];
   total: number = 0;
-  constructor(private cartService: CartService) {}
+  constructor(private cartService: CartService, private userService: UserService) {}
+
+  logged = this.userService.logged
 
   ngOnInit() {
     this.cartService.getCart().subscribe(cart => {
